@@ -50,6 +50,14 @@
             app:fontFamily="@font/mitr_extralight"
             android:background="@drawable/edit_round"
             android:inputType="textPassword"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="ลืมรหัสผ่าน"
+            app:fontFamily="@font/mitr_extralight"
+            android:textColor="#ffffff"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:textSize="10dp" />
 
         <Button
             android:id="@+id/bLogin"
