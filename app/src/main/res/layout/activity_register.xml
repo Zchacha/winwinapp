@@ -9,7 +9,7 @@
 
 
     <ScrollView
-        android:layout_width="411dp"
+        android:layout_width="387dp"
         android:layout_height="568dp">
 
         <LinearLayout
@@ -18,8 +18,8 @@
             android:orientation="vertical">
 
             <LinearLayout
-                android:layout_width="422dp"
-                android:layout_height="663dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:background="#164176"
                 android:orientation="vertical"
                 android:padding="10dp">
@@ -29,9 +29,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="ชื่อจริง"
-                    android:textStyle="bold"
                     android:textColor="#ffffff"
                     android:textSize="20dp"
+                    android:textStyle="bold"
                     app:fontFamily="@font/mitr_extralight" />
 
                 <EditText
@@ -48,9 +48,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="นามสกุล"
-                    android:textStyle="bold"
                     android:textColor="#ffffff"
                     android:textSize="20dp"
+                    android:textStyle="bold"
                     app:fontFamily="@font/mitr_extralight" />
 
                 <EditText
@@ -67,9 +67,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="อีเมล์"
-                    android:textStyle="bold"
                     android:textColor="#ffffff"
                     android:textSize="20dp"
+                    android:textStyle="bold"
                     app:fontFamily="@font/mitr_extralight" />
 
                 <EditText
@@ -87,9 +87,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="ชื่อผู้ใช้งาน"
-                    android:textStyle="bold"
                     android:textColor="#ffffff"
                     android:textSize="20dp"
+                    android:textStyle="bold"
                     app:fontFamily="@font/mitr_extralight" />
 
                 <EditText
@@ -106,9 +106,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="รหัสผ่าน"
-                    android:textStyle="bold"
                     android:textColor="#ffffff"
                     android:textSize="20dp"
+                    android:textStyle="bold"
                     app:fontFamily="@font/mitr_extralight" />
 
                 <EditText
@@ -126,9 +126,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="ยืนยันรหัสผ่าน"
-                    android:textStyle="bold"
                     android:textColor="#ffffff"
                     android:textSize="20dp"
+                    android:textStyle="bold"
                     app:fontFamily="@font/mitr_extralight" />
 
                 <EditText
