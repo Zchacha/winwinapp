@@ -23,8 +23,9 @@
         android:layout_gravity="center_horizontal"
         android:text="Win Win"
         android:textColor="#ffffff"
-        android:textSize="33dp"
-        android:textStyle="bold" />
+        android:textSize="50dp"
+        android:textStyle="bold"
+        app:fontFamily="@font/pattaya" />
 
     <Button
         android:id="@+id/bLoginLink"
@@ -33,7 +34,10 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="10dp"
         android:background="@drawable/button"
-        android:text="Login"
+        android:includeFontPadding="false"
+        android:text="เข้าสู่ระบบ"
+        android:textSize="30dp"
+        app:fontFamily="@font/pattaya"
         android:textColor="#FE6C08" />
 
     <TextView
@@ -41,9 +45,10 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="10dp"
-        android:text="or"
+        android:text="หรือ"
+        app:fontFamily="@font/pattaya"
         android:textColor="#FFFFFF"
-        android:textSize="15dp"
+        android:textSize="20dp"
         android:textStyle="bold" />
 
     <Button
@@ -53,7 +58,9 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="10dp"
         android:background="@drawable/buttom0"
-        android:text="Register"
+        android:text="ลงทะเบียน"
+        android:textSize="30dp"
+        app:fontFamily="@font/pattaya"
         android:textColor="#FFFFFF" />
 
 

@@ -1,5 +1,6 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:background="#164176"
@@ -14,7 +15,8 @@
         android:padding="10dp">
         <TextView
             android:layout_width="wrap_content"
-            android:text="Username"
+            android:text="ผู้ใช้งาน"
+            app:fontFamily="@font/pattaya"
             android:layout_height="wrap_content"
             android:textColor="#ffffff"
             android:textSize="20dp" />
@@ -26,11 +28,13 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:background="@drawable/edit_round"
-            android:hint="  Enter Username" />
+            android:hint="  Username"
+            app:fontFamily="@font/pattaya" />
 
         <TextView
             android:layout_width="wrap_content"
-            android:text="Password"
+            android:text="รหัสผ่าน"
+            app:fontFamily="@font/pattaya"
             android:textColor="#ffffff"
             android:layout_height="wrap_content"
             android:textSize="20dp" />
@@ -41,13 +45,16 @@
             android:layout_height="40dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:hint="  Enter Password"
+            android:hint="  Password"
+            app:fontFamily="@font/pattaya"
             android:background="@drawable/edit_round"
             android:inputType="textPassword"/>
 
         <Button
             android:id="@+id/bLogin"
-            android:text="Login"
+            android:text="ล็อกอิน"
+            app:fontFamily="@font/pattaya"
+            android:textSize="30dp"
             android:layout_width="308dp"
             android:layout_height="71dp"
             android:layout_marginTop="20dp"

@@ -14,7 +14,8 @@
                 android:type="linear"
                 android:startColor="#ffffff"
                 android:endColor="#ececec"
-                android:angle="90" />
+                android:angle="90"
+                android:textSize="30dp"/>
         </shape>
     </item>
 

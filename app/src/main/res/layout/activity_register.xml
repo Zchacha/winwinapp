@@ -2,6 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#164176"
     android:orientation="vertical"
     android:padding="10dp">
@@ -27,7 +28,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Firstname"
+                    android:text="ชื่อจริง"
+                    app:fontFamily="@font/pattaya"
                     android:textColor="#ffffff"
                     android:textSize="20dp" />
 
@@ -38,12 +40,14 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/edit_round"
-                    android:hint="  Enter Firstname" />
+                    android:hint="  Firstname"
+                    app:fontFamily="@font/pattaya" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Lastname"
+                    android:text="นามสกุล"
+                    app:fontFamily="@font/pattaya"
                     android:textColor="#ffffff"
                     android:textSize="20dp" />
 
@@ -54,13 +58,15 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/edit_round"
-                    android:hint="  Enter Lastname" />
+                    android:hint="  Lastname"
+                    app:fontFamily="@font/pattaya" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="E-mail"
-                    android:textColor="#4d4e4f"
+                    android:text="อีเมล์"
+                    app:fontFamily="@font/pattaya"
+                    android:textColor="#ffffff"
                     android:textSize="20dp" />
 
                 <EditText
@@ -70,13 +76,15 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/edit_round"
-                    android:hint="  Enter E-mail"
+                    android:hint="  E-mail"
+                    app:fontFamily="@font/pattaya"
                     android:inputType="textEmailAddress" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Username"
+                    android:text="ชื่อผู้ใช้งาน"
+                    app:fontFamily="@font/pattaya"
                     android:textColor="#ffffff"
                     android:textSize="20dp" />
 
@@ -87,12 +95,14 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/edit_round"
-                    android:hint="  Enter Username" />
+                    android:hint="  Username"
+                    app:fontFamily="@font/pattaya" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Password"
+                    android:text="รหัสผ่าน"
+                    app:fontFamily="@font/pattaya"
                     android:textColor="#ffffff"
                     android:textSize="20dp" />
 
@@ -103,13 +113,15 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/edit_round"
-                    android:hint="  Enter Password"
+                    android:hint="  Password"
+                    app:fontFamily="@font/pattaya"
                     android:inputType="textPassword" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="ConfirmPassword"
+                    android:text="ยืนยันรหัสผ่าน"
+                    app:fontFamily="@font/pattaya"
                     android:textColor="#ffffff"
                     android:textSize="20dp" />
 
@@ -120,7 +132,8 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/edit_round"
-                    android:hint="  Enter ConfirmPassword"
+                    android:hint="  ConfirmPassword"
+                    app:fontFamily="@font/pattaya"
                     android:inputType="textPassword" />
 
                 <Button
@@ -130,7 +143,9 @@
                     android:layout_marginTop="20dp"
                     android:layout_gravity="center_horizontal"
                     android:background="@drawable/buttom0"
-                    android:text="Register"
+                    android:text="ลงทะเบียน"
+                    app:fontFamily="@font/pattaya"
+                    android:textSize="30dp"
                     android:textColor="#ffffff" />
 
             </LinearLayout>
