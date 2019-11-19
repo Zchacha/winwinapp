@@ -8,7 +8,7 @@
     android:layout_height="match_parent">
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="399dp"
         android:layout_height="663dp"
         android:background="#164176"
         android:orientation="vertical"
@@ -20,6 +20,7 @@
             android:text="ผู้ใช้งาน"
             android:textColor="#ffffff"
             android:textSize="20dp"
+            android:textStyle="bold"
             app:fontFamily="@font/mitr_extralight" />
 
         <EditText
@@ -34,11 +35,12 @@
 
         <TextView
             android:layout_width="wrap_content"
-            android:text="รหัสผ่าน"
-            app:fontFamily="@font/mitr_extralight"
-            android:textColor="#ffffff"
             android:layout_height="wrap_content"
-            android:textSize="20dp" />
+            android:text="รหัสผ่าน"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:fontFamily="@font/mitr_extralight" />
 
         <EditText
             android:id="@+id/etPassword"
@@ -46,22 +48,33 @@
             android:layout_height="40dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:hint="  Password"
-            app:fontFamily="@font/mitr_extralight"
             android:background="@drawable/edit_round"
-            android:inputType="textPassword"/>
+            android:hint="  Password"
+            android:inputType="textPassword"
+            app:fontFamily="@font/mitr_extralight" />
+
+        <TextView
+            android:id="@+id/etForgot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="300dp"
+            android:singleLine="false"
+            android:text="@string/forgot"
+            android:textColor="#d0efff"
+            android:textSize="15dp"
+            app:fontFamily="@font/mitr_extralight" />
 
         <Button
-            android:id="@+id/measure_distance"
-            android:text="ล็อกอิน"
-            app:fontFamily="@font/pattaya"
-            android:textSize="30dp"
+            android:id="@+id/bLogin"
             android:layout_width="308dp"
             android:layout_height="71dp"
-            android:layout_marginTop="20dp"
             android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
             android:background="@drawable/buttom0"
-            android:textColor="#ffffff" />
+            android:text="ล็อกอิน"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            app:fontFamily="@font/pattaya" />
     </LinearLayout>
 
 

@@ -10,7 +10,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.home.editprofile"></activity>
+        <activity android:name=".forgot"></activity>
         <activity android:name=".complaint" />
         <activity
             android:name=".Home"
