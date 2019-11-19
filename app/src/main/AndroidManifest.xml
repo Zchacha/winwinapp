@@ -10,7 +10,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".forgot"></activity>
+        <activity android:name=".forgot"
+            android:label="ลืมรหัสผ่าน"
+            android:parentActivityName=".MainActivity" />
         <activity android:name=".complaint" />
         <activity
             android:name=".Home"
@@ -24,6 +26,7 @@
             android:name=".login"
             android:label="LOGIN"
             android:parentActivityName=".MainActivity" />
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
