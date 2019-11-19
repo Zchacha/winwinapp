@@ -16,7 +16,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:text="ผู้ใช้งาน"
-            app:fontFamily="@font/pattaya"
+            app:fontFamily="@font/mitr_extralight"
             android:layout_height="wrap_content"
             android:textColor="#ffffff"
             android:textSize="20dp" />
@@ -29,12 +29,12 @@
             android:layout_marginBottom="10dp"
             android:background="@drawable/edit_round"
             android:hint="  Username"
-            app:fontFamily="@font/pattaya" />
+            app:fontFamily="@font/mitr_extralight" />
 
         <TextView
             android:layout_width="wrap_content"
             android:text="รหัสผ่าน"
-            app:fontFamily="@font/pattaya"
+            app:fontFamily="@font/mitr_extralight"
             android:textColor="#ffffff"
             android:layout_height="wrap_content"
             android:textSize="20dp" />
@@ -46,7 +46,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:hint="  Password"
-            app:fontFamily="@font/pattaya"
+            app:fontFamily="@font/mitr_extralight"
             android:background="@drawable/edit_round"
             android:inputType="textPassword"/>
 

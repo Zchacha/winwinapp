@@ -29,7 +29,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="ชื่อจริง"
-                    app:fontFamily="@font/pattaya"
+                    app:fontFamily="@font/mitr_extralight"
                     android:textColor="#ffffff"
                     android:textSize="20dp" />
 
@@ -41,13 +41,13 @@
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/edit_round"
                     android:hint="  Firstname"
-                    app:fontFamily="@font/pattaya" />
+                    app:fontFamily="@font/mitr_extralight" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="นามสกุล"
-                    app:fontFamily="@font/pattaya"
+                    app:fontFamily="@font/mitr_extralight"
                     android:textColor="#ffffff"
                     android:textSize="20dp" />
 
@@ -59,13 +59,13 @@
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/edit_round"
                     android:hint="  Lastname"
-                    app:fontFamily="@font/pattaya" />
+                    app:fontFamily="@font/mitr_extralight" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="อีเมล์"
-                    app:fontFamily="@font/pattaya"
+                    app:fontFamily="@font/mitr_extralight"
                     android:textColor="#ffffff"
                     android:textSize="20dp" />
 
@@ -77,14 +77,14 @@
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/edit_round"
                     android:hint="  E-mail"
-                    app:fontFamily="@font/pattaya"
+                    app:fontFamily="@font/mitr_extralight"
                     android:inputType="textEmailAddress" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="ชื่อผู้ใช้งาน"
-                    app:fontFamily="@font/pattaya"
+                    app:fontFamily="@font/mitr_extralight"
                     android:textColor="#ffffff"
                     android:textSize="20dp" />
 
@@ -96,13 +96,13 @@
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/edit_round"
                     android:hint="  Username"
-                    app:fontFamily="@font/pattaya" />
+                    app:fontFamily="@font/mitr_extralight" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="รหัสผ่าน"
-                    app:fontFamily="@font/pattaya"
+                    app:fontFamily="@font/mitr_extralight"
                     android:textColor="#ffffff"
                     android:textSize="20dp" />
 
@@ -114,14 +114,14 @@
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/edit_round"
                     android:hint="  Password"
-                    app:fontFamily="@font/pattaya"
+                    app:fontFamily="@font/mitr_extralight"
                     android:inputType="textPassword" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="ยืนยันรหัสผ่าน"
-                    app:fontFamily="@font/pattaya"
+                    app:fontFamily="@font/mitr_extralight"
                     android:textColor="#ffffff"
                     android:textSize="20dp" />
 
@@ -133,7 +133,7 @@
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/edit_round"
                     android:hint="  ConfirmPassword"
-                    app:fontFamily="@font/pattaya"
+                    app:fontFamily="@font/mitr_extralight"
                     android:inputType="textPassword" />
 
                 <Button
