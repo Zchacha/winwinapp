@@ -9,7 +9,7 @@
 
 
     <ScrollView
-        android:layout_width="match_parent"
+        android:layout_width="411dp"
         android:layout_height="568dp">
 
         <LinearLayout
@@ -18,7 +18,7 @@
             android:orientation="vertical">
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="422dp"
                 android:layout_height="663dp"
                 android:background="#164176"
                 android:orientation="vertical"
@@ -29,9 +29,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="ชื่อจริง"
-                    app:fontFamily="@font/mitr_extralight"
+                    android:textStyle="bold"
                     android:textColor="#ffffff"
-                    android:textSize="20dp" />
+                    android:textSize="20dp"
+                    app:fontFamily="@font/mitr_extralight" />
 
                 <EditText
                     android:id="@+id/etFirstname"
@@ -47,9 +48,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="นามสกุล"
-                    app:fontFamily="@font/mitr_extralight"
+                    android:textStyle="bold"
                     android:textColor="#ffffff"
-                    android:textSize="20dp" />
+                    android:textSize="20dp"
+                    app:fontFamily="@font/mitr_extralight" />
 
                 <EditText
                     android:id="@+id/etLastname"
@@ -65,9 +67,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="อีเมล์"
-                    app:fontFamily="@font/mitr_extralight"
+                    android:textStyle="bold"
                     android:textColor="#ffffff"
-                    android:textSize="20dp" />
+                    android:textSize="20dp"
+                    app:fontFamily="@font/mitr_extralight" />
 
                 <EditText
                     android:id="@+id/etEmail"
@@ -77,16 +80,17 @@
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/edit_round"
                     android:hint="  E-mail"
-                    app:fontFamily="@font/mitr_extralight"
-                    android:inputType="textEmailAddress" />
+                    android:inputType="textEmailAddress"
+                    app:fontFamily="@font/mitr_extralight" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="ชื่อผู้ใช้งาน"
-                    app:fontFamily="@font/mitr_extralight"
+                    android:textStyle="bold"
                     android:textColor="#ffffff"
-                    android:textSize="20dp" />
+                    android:textSize="20dp"
+                    app:fontFamily="@font/mitr_extralight" />
 
                 <EditText
                     android:id="@+id/etUsername"
@@ -102,9 +106,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="รหัสผ่าน"
-                    app:fontFamily="@font/mitr_extralight"
+                    android:textStyle="bold"
                     android:textColor="#ffffff"
-                    android:textSize="20dp" />
+                    android:textSize="20dp"
+                    app:fontFamily="@font/mitr_extralight" />
 
                 <EditText
                     android:id="@+id/etPassword"
@@ -114,16 +119,17 @@
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/edit_round"
                     android:hint="  Password"
-                    app:fontFamily="@font/mitr_extralight"
-                    android:inputType="textPassword" />
+                    android:inputType="textPassword"
+                    app:fontFamily="@font/mitr_extralight" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="ยืนยันรหัสผ่าน"
-                    app:fontFamily="@font/mitr_extralight"
+                    android:textStyle="bold"
                     android:textColor="#ffffff"
-                    android:textSize="20dp" />
+                    android:textSize="20dp"
+                    app:fontFamily="@font/mitr_extralight" />
 
                 <EditText
                     android:id="@+id/etConfirmPassword"
@@ -133,20 +139,20 @@
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/edit_round"
                     android:hint="  ConfirmPassword"
-                    app:fontFamily="@font/mitr_extralight"
-                    android:inputType="textPassword" />
+                    android:inputType="textPassword"
+                    app:fontFamily="@font/mitr_extralight" />
 
                 <Button
                     android:id="@+id/bRegister"
                     android:layout_width="308dp"
                     android:layout_height="71dp"
-                    android:layout_marginTop="20dp"
                     android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
                     android:background="@drawable/buttom0"
                     android:text="ลงทะเบียน"
-                    app:fontFamily="@font/pattaya"
+                    android:textColor="#ffffff"
                     android:textSize="30dp"
-                    android:textColor="#ffffff" />
+                    app:fontFamily="@font/pattaya" />
 
             </LinearLayout>
         </LinearLayout>
