@@ -52,7 +52,7 @@
             android:inputType="textPassword"/>
 
         <Button
-            android:id="@+id/bLogin"
+            android:id="@+id/measure_distance"
             android:text="ล็อกอิน"
             app:fontFamily="@font/pattaya"
             android:textSize="30dp"

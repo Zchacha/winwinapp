@@ -20,7 +20,7 @@ public class login extends AppCompatActivity implements View.OnClickListener {
 
         etUsername = (EditText) findViewById(R.id.etUsername);
         etPassword = (EditText) findViewById(R.id.etPassword);
-        bLogin = (Button) findViewById(R.id.bLogin);
+        bLogin = (Button) findViewById(R.id.measure_distance);
 
         bLogin.setOnClickListener(this);
 
@@ -29,7 +29,7 @@ public class login extends AppCompatActivity implements View.OnClickListener {
     @Override
     public void onClick(View v){
         switch (v.getId()){
-            case R.id.bLogin:
+            case R.id.measure_distance:
                 Intent intent = new Intent(this,Home.class);
                 startActivity(intent);
                 break;

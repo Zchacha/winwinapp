@@ -20,6 +20,29 @@
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
         app:headerLayout="@layout/nav_header_home"
-        app:menu="@menu/activity_home_drawer" />
+        app:menu="@menu/activity_home_drawer">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="250dp"
+            android:layout_height="500dp"
+            app:srcCompat="@drawable/orangeback" />
+
+
+        <TextView
+            android:id="@+id/edit_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="350dp"
+            android:layout_marginRight="70dp"
+            android:singleLine="true"
+            android:text="แก้ไขข้อมูลส่วนตัว"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            app:fontFamily="@font/mitr_extralight"
+            />
+
+    </com.google.android.material.navigation.NavigationView>
 
 </androidx.drawerlayout.widget.DrawerLayout>
