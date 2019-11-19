@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:text="Win Win"
-        android:textColor="#FF6C08"
+        android:textColor="#ffffff"
         android:textSize="33dp"
         android:textStyle="bold" />
 
