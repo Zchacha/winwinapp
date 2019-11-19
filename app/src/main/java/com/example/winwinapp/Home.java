@@ -22,7 +22,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.Menu;
-import android.widget.EditText;
 import android.widget.TextView;
 
 public class Home extends AppCompatActivity  {
@@ -88,4 +87,12 @@ public class Home extends AppCompatActivity  {
         startActivity(intent);
     }
 
+    public static class editprofile extends AppCompatActivity {
+
+        @Override
+        protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_editprofile);
+        }
+    }
 }
