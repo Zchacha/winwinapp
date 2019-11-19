@@ -15,10 +15,10 @@
             android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity
             android:name=".register"
-            android:label="REGISTER" />
+            android:label="REGISTER" ></activity>
         <activity
             android:name=".login"
-            android:label="LOGIN" />
+            android:label="LOGIN" ></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
