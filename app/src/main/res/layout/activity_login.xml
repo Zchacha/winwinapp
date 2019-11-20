@@ -25,7 +25,7 @@
 
         <EditText
             android:id="@+id/etUsername"
-            android:layout_width="371dp"
+            android:layout_width="320dp"
             android:layout_height="40dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
@@ -44,7 +44,7 @@
 
         <EditText
             android:id="@+id/etPassword"
-            android:layout_width="371dp"
+            android:layout_width="320dp"
             android:layout_height="40dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
@@ -57,7 +57,7 @@
             android:id="@+id/etForgot"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="300dp"
+            android:layout_marginLeft="240dp"
             android:singleLine="false"
             android:text="@string/forgot"
             android:textColor="#d0efff"
@@ -68,7 +68,7 @@
             android:id="@+id/bLogin"
             android:layout_width="308dp"
             android:layout_height="71dp"
-            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="5dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/buttom0"
             android:text="ล็อกอิน"
