@@ -54,6 +54,7 @@
             android:text="กลับหน้าหลัก"
             android:textSize="30sp"
             android:textStyle="bold"
+            app:fontFamily="@font/pattaya"
             android:textColor="@color/colorPrimary" />
 
     </LinearLayout>
