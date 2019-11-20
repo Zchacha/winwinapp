@@ -74,7 +74,7 @@
             android:text="ล็อกอิน"
             android:textColor="#ffffff"
             android:textSize="30dp"
-            app:fontFamily="@font/pattaya" />
+            app:fontFamily="@font/prompt_semibold"  />
     </LinearLayout>
 
 

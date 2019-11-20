@@ -51,16 +51,16 @@
 
 
     </LinearLayout>
-
-    <Button
-        android:layout_width="300dp"
-        android:layout_height="60dp"
-        android:layout_gravity="center"
-        android:background="@drawable/buttom0"
-        android:fontFamily="@font/prompt_semibold"
-        android:text="คำนวณ"
-        android:textColor="@color/colorwhite"
-        android:textSize="35sp" />
+   <Button
+       android:layout_width="300dp"
+       android:layout_height="60dp"
+       android:layout_gravity="center"
+       android:background="@drawable/buttom0"
+       android:text="คำนวณ"
+       android:textColor="@color/colorwhite"
+       android:textStyle="bold"
+       android:textSize="30dp"
+       android:fontFamily="@font/pattaya"/>
 
 
 </LinearLayout>
