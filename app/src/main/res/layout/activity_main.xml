@@ -38,7 +38,7 @@
         android:includeFontPadding="false"
         android:text="เข้าสู่ระบบ"
         android:textSize="30dp"
-        app:fontFamily="@font/pattaya"
+        app:fontFamily="@font/prompt_semibold"
         android:textColor="#FE6C08" />
 
     <TextView
@@ -47,7 +47,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="10dp"
         android:text="หรือ"
-        app:fontFamily="@font/pattaya"
+        app:fontFamily="@font/mitr_extralight"
         android:textColor="#FFFFFF"
         android:textSize="20dp"
         android:textStyle="bold" />
@@ -61,7 +61,7 @@
         android:background="@drawable/buttom0"
         android:text="ลงทะเบียน"
         android:textSize="30dp"
-        app:fontFamily="@font/pattaya"
+        app:fontFamily="@font/prompt_semibold"
         android:textColor="#FFFFFF" />
 
 

@@ -49,7 +49,6 @@
         android:id="@+id/bForgot"
         android:layout_width="308dp"
         android:layout_height="71dp"
-        android:layout_marginLeft="5dp"
         android:layout_marginTop="20dp"
         android:layout_gravity="center_horizontal"
         android:background="@drawable/buttom0"
