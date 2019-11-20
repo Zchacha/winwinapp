@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".calculated"
+    android:orientation="vertical"
+    android:background="#164176">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="65dp"
+        android:layout_marginStart="30dp"
+        android:text="ระยะทางรวม"
+        android:textStyle="bold"
+        android:textColor="@color/colorwhite"
+        android:textSize="25sp"
+        android:fontFamily="@font/mitr_extralight"/>
+
+    <EditText
+        android:layout_marginVertical="65dp"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:background="@drawable/edit_sqaure"/>
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="65dp"
+        android:layout_marginStart="20dp"
+        android:text="km"
+        android:textStyle="bold"
+        android:textColor="@color/colorwhite"
+        android:textSize="25sp"
+        android:fontFamily="@font/mitr_extralight"/>
+
+
+
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:text="ราคาทางรวม"
+            android:textStyle="bold"
+            android:textColor="@color/colorwhite"
+            android:textSize="25sp"
+            android:fontFamily="@font/mitr_extralight"/>
+
+        <EditText
+
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_sqaure"/>
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="20dp"
+            android:text="km"
+            android:textStyle="bold"
+            android:textColor="@color/colorwhite"
+            android:textSize="25sp"
+            android:fontFamily="@font/mitr_extralight"/>
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="65dp"
+            android:layout_marginStart="30dp"
+            android:text="ราคาสูงสุด"
+            android:textStyle="bold"
+            android:textColor="@color/colorwhite"
+            android:textSize="25sp"
+            android:fontFamily="@font/mitr_extralight"/>
+
+        <EditText
+            android:layout_marginVertical="65dp"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_sqaure"/>
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="65dp"
+            android:layout_marginStart="20dp"
+            android:text="บาท"
+            android:textStyle="bold"
+            android:textColor="@color/colorwhite"
+            android:textSize="25sp"
+            android:fontFamily="@font/mitr_extralight"/>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/button"
+            android:fontFamily="@font/prompt_semibold"
+            android:text="ร้องเรียน"
+            android:textColor="@color/colorPrimary"
+            android:textSize="30sp" />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="45dp"
+            android:background="@drawable/buttom0"
+            android:fontFamily="@font/prompt_semibold"
+            android:text="หน้าหลัก"
+            android:textColor="@color/colorwhite"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+
+</LinearLayout>
