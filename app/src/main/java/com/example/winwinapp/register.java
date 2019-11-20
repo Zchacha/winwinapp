@@ -33,7 +33,7 @@ public class register extends AppCompatActivity implements View.OnClickListener 
     public void onClick(View v){
         switch (v.getId()){
             case R.id.bRegister:
-                Toast.makeText(getApplicationContext(),"กรุณาเช็คอีเมล์",Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(),"กรุณาเช็คอีเมล",Toast.LENGTH_LONG).show();
                 break;
         }
     }
