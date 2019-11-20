@@ -1,7 +1,5 @@
 package com.example.winwinapp;
 
-import android.content.Intent;
-import android.graphics.Paint;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -22,13 +20,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.Menu;
-import android.widget.TextView;
 
-public class Home extends AppCompatActivity  {
+public class Home extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
-    public TextView edit_profile;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,16 +51,6 @@ public class Home extends AppCompatActivity  {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
-
-        edit_profile = (TextView) findViewById(R.id.edit_profile);
-        edit_profile.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openEditProfile();
-            }
-        });
-        edit_profile.setPaintFlags(edit_profile.getPaintFlags()| Paint.UNDERLINE_TEXT_FLAG);
-
     }
 
     @Override
@@ -80,19 +65,5 @@ public class Home extends AppCompatActivity  {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
-    }
-
-    public void openEditProfile(){
-        Intent intent = new Intent(this,edit_profile.class);
-        startActivity(intent);
-    }
-
-    public static class edit_profile extends AppCompatActivity {
-
-        @Override
-        protected void onCreate(Bundle savedInstanceState) {
-            super.onCreate(savedInstanceState);
-            setContentView(R.layout.activity_editprofile);
-        }
     }
 }

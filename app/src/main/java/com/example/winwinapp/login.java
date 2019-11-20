@@ -9,13 +9,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class login extends AppCompatActivity implements View.OnClickListener {
 
     private Button bLogin;
     EditText etUsername,etPassword;
-    private TextView etForgot,etHome;
+    private TextView etForgot;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,21 +26,13 @@ public class login extends AppCompatActivity implements View.OnClickListener {
 
         bLogin = (Button) findViewById(R.id.bLogin);
         etForgot = (TextView) findViewById(R.id.etForgot);
-        etHome = (TextView) findViewById(R.id.etHome);
 
         bLogin.setOnClickListener(this);
         etForgot.setPaintFlags(etForgot.getPaintFlags()| Paint.UNDERLINE_TEXT_FLAG);
-        etHome.setPaintFlags(etHome.getPaintFlags()| Paint.UNDERLINE_TEXT_FLAG);
         etForgot.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openForgot();
-            }
-        });
-        etHome.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openHome();
             }
         });
 
@@ -51,8 +42,8 @@ public class login extends AppCompatActivity implements View.OnClickListener {
     public void onClick(View v){
         switch (v.getId()){
             case R.id.bLogin:
-                Toast.makeText(getApplicationContext(),"กำลังข้าสู่ระบบเ",Toast.LENGTH_LONG).show();
-                break;
+                Intent intent = new Intent(this,Home.class);
+                startActivity(intent);
         }
     }
     public void openForgot(){
