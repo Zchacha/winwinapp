@@ -64,6 +64,17 @@
             android:textSize="15dp"
             app:fontFamily="@font/mitr_extralight" />
 
+        <TextView
+            android:id="@+id/etHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="240dp"
+            android:singleLine="false"
+            android:text="Home"
+            android:textColor="#d0efff"
+            android:textSize="15dp"
+            app:fontFamily="@font/mitr_extralight" />
+
         <Button
             android:id="@+id/bLogin"
             android:layout_width="308dp"
