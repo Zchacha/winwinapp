@@ -10,30 +10,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-        //page forgot password
-        <activity android:name=".forgot"
-            android:label="ลืมรหัสผ่าน"
-            android:parentActivityName=".MainActivity" />
-
-        <activity android:name=".complaint" />
-
-        //Home
         <activity
             android:name=".Home"
             android:label="@string/title_activity_home"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.HOME" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".forgot"
+            android:label="ลืมรหัสผ่าน"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".complaint" />
         <activity
             android:name=".register"
             android:label="REGISTER"
             android:parentActivityName=".MainActivity" />
-
-        <activity
-            android:name=".login"
-            android:label="LOGIN"
-            android:parentActivityName=".MainActivity" />
-
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -41,7 +36,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".login">
+            <intent-filter>
+                <action android:name="android.intent.action.LOGIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 
         <meta-data
             android:name="preloaded_fonts"
