@@ -10,18 +10,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        //page forgot password
         <activity android:name=".forgot"
             android:label="ลืมรหัสผ่าน"
             android:parentActivityName=".MainActivity" />
+
         <activity android:name=".complaint" />
+
+        //Home
         <activity
             android:name=".Home"
             android:label="@string/title_activity_home"
             android:theme="@style/AppTheme.NoActionBar" />
+
         <activity
             android:name=".register"
             android:label="REGISTER"
             android:parentActivityName=".MainActivity" />
+
         <activity
             android:name=".login"
             android:label="LOGIN"
@@ -34,6 +41,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
 
         <meta-data
             android:name="preloaded_fonts"

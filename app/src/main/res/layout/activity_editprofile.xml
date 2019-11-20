@@ -5,4 +5,82 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Home$editprofile"/>
+    android:background="#164176"
+    tools:context=".Home$editprofile">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="clip_horizontal|center|clip_vertical"
+        android:text="editprofile" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:fontFamily="@font/mitr_extralight"
+        android:text="ชื่อผู้ใช้งาน"
+        android:textColor="#FF9800"
+        android:textSize="23dp" />
+
+    <TextView
+        android:id="@+id/firstname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:fontFamily="@font/mitr_extralight"
+        android:text="ชื่อ"
+        android:textColor="#FF9800"
+        android:textSize="23dp" />
+
+    <TextView
+        android:id="@+id/lastname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:fontFamily="@font/mitr_extralight"
+        android:text="นามสกุล"
+        android:textColor="#FF9800"
+        android:textSize="23dp" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:fontFamily="@font/mitr_extralight"
+        android:text="Email"
+        android:textColor="#FF9800"
+        android:textSize="23dp" />
+
+    <TextView
+        android:id="@+id/money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:fontFamily="@font/mitr_extralight"
+        android:text="กำหนดค่างบ"
+        android:textColor="#FF9800"
+        android:textSize="23dp" />
+
+    <Button
+        android:id="@+id/saveeditprofile"
+        android:layout_width="308dp"
+        android:layout_height="71dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/buttom0"
+        android:text="บันทึกข้อมูล"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        app:fontFamily="@font/pattaya" />
+
+
+</LinearLayout>

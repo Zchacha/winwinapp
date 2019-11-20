@@ -83,11 +83,11 @@ public class Home extends AppCompatActivity  {
     }
 
     public void openEditProfile(){
-        Intent intent = new Intent(this,Home.class);
+        Intent intent = new Intent(this,edit_profile.class);
         startActivity(intent);
     }
 
-    public static class editprofile extends AppCompatActivity {
+    public static class edit_profile extends AppCompatActivity {
 
         @Override
         protected void onCreate(Bundle savedInstanceState) {
