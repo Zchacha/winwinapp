@@ -76,8 +76,8 @@ public class Home extends AppCompatActivity {
     }
 
     public void openEditprofile(){
-
-        Intent intent = new Intent(this,editprofile.class);
+        TextView etprofile = (TextView) findViewById(R.id.etprofile);
+        Intent intent = new Intent(Home.this,editprofile.class);
         startActivity(intent);
     }
 }
