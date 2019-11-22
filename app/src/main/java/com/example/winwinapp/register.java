@@ -59,6 +59,7 @@ public class register extends AppCompatActivity  {
                         public void onComplete(@NonNull Task<AuthResult> task) {
 
                             if(task.isSuccessful()){
+                                sendData();
                                 showMessage("ลงทะเบียนสำเร็จ");
                                 startActivity(new Intent(register.this, Home.class));
                             }else{
@@ -128,6 +129,13 @@ public class register extends AppCompatActivity  {
         return result;
     }
 
+
+    private  void sendData() {
+        DatabaseReference mRootRef = FirebaseDatabase.getInstance().getReference();
+        DatabaseReference mUsersRef = mRootRef.child("users");
+        User userdata = new User(firstname,lastname,username,email);
+        mUsersRef.push().setValue(userdata);
+    }
     //method to show toast message
     private void showMessage (String text){
 
