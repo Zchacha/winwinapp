@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "963241459315",
+    "firebase_url": "https://winwin-d2737.firebaseio.com",
+    "project_id": "winwin-d2737",
+    "storage_bucket": "winwin-d2737.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:963241459315:android:1fd037188ec9e13c28f406",
+        "android_client_info": {
+          "package_name": "com.example.winwinapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "963241459315-1as5niaaevef1mdpl283ji6a6c4vlg8a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.winwinapp",
+            "certificate_hash": "c8e91ef3545afab3037cd660c06eeff5cfb5fef2"
+          }
+        },
+        {
+          "client_id": "963241459315-hf12onl6oe6mdrv8oka4vc138pcccd58.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.winwinapp",
+            "certificate_hash": "b6465a962e2485280f6bee0cec26bc9b12885585"
+          }
+        },
+        {
+          "client_id": "963241459315-81k1lbprgq3eea13s7b617pdm85grtfc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcnNkUgQfDay4-EiOFZahHmn-je3rJWLM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "963241459315-81k1lbprgq3eea13s7b617pdm85grtfc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
