@@ -35,12 +35,21 @@ public class login extends AppCompatActivity  {
         etUsername =  (EditText) findViewById(R.id.etUsername);
         etPassword = (EditText) findViewById(R.id.etPassword);
         bLogin = (Button)  findViewById(R.id.bLogin);
+        txForgot = (TextView) findViewById(R.id.txForgot);
+        txForgot.setPaintFlags(txForgot.getPaintFlags()| Paint.UNDERLINE_TEXT_FLAG);
+        txForgot.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openForgot();
+            }
+        });
 
         mAuth = FirebaseAuth.getInstance();
 
         FirebaseUser user = mAuth.getCurrentUser();
 
-        if (user !=null){
+
+        if (user !=null ){
             finish();
             startActivity(new Intent(login.this,Home.class));
         }
@@ -48,10 +57,12 @@ public class login extends AppCompatActivity  {
         bLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                validate(etUsername.getText().toString(),etPassword.getText().toString());
+
+                if (validate()) {
+                    validate(etUsername.getText().toString(), etPassword.getText().toString());
+                }
             }
         });
-
 
     }
     private  void validate(String userName,String userPassword){
@@ -72,22 +83,34 @@ public class login extends AppCompatActivity  {
 
         });
     }
+    public void openForgot(){
+        Intent intent = new Intent(this,forgot.class);
+        startActivity(intent);
+    }
 
+    private Boolean validate() {
+        Boolean result = false;
 
+        String email = etUsername.getText().toString();
+        String password = etPassword.getText().toString();
 
+        if (email.isEmpty()) {
 
+            showMessage("กรุณากรอกอีเมล");
 
+        } else if (password.isEmpty()) {
 
+            showMessage("กรุณารหัสผ่าน");
 
+        } else if (email.isEmpty() && password.isEmpty()) {
 
+            showMessage("กรุณากรอกข้อมูล");
+        }else{
+            result = true;
+        }
 
-
-
-
-
-
-
-
+        return result;
+    }
 
         //method to show toast message
         private void showMessage (String text){
