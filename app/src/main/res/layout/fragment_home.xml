@@ -34,11 +34,6 @@
         android:textSize="29dp"
         app:fontFamily="@font/prompt_medium" />
 
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="5dp"
-        android:layout_marginTop="50dp" />
-
     <Button
         android:id="@+id/pay"
         android:layout_width="350dp"
