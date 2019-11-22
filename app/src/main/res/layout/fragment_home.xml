@@ -7,27 +7,13 @@
     android:background="#164176"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/text_home"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textColor="#164176"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <Button
         android:id="@+id/pin"
         android:layout_width="350dp"
         android:layout_height="80dp"
         android:layout_gravity="center|clip_vertical|top|center_vertical"
         android:layout_marginLeft="5dp"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="160dp"
         android:background="@drawable/buttom0"
         android:text="ปักหมุดการเดินทาง"
         android:textColor="#ffffff"
@@ -41,9 +27,27 @@
         android:layout_height="80dp"
         android:layout_gravity="center|clip_vertical|top|center_vertical"
         android:layout_marginLeft="5dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="50dp"
         android:background="@drawable/buttom0"
         android:text="กำหนดระยะทางด้วยตนเอง"
+        android:textColor="#ffffff"
+        android:textSize="29dp"
+        app:fontFamily="@font/prompt_medium" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginTop="50dp" />
+
+    <Button
+        android:id="@+id/pay"
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center|clip_vertical|top|center_vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/buttom0"
+        android:text="รายจ่าย"
         android:textColor="#ffffff"
         android:textSize="29dp"
         app:fontFamily="@font/prompt_medium" />
