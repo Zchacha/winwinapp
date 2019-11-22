@@ -11,8 +11,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".calculated"></activity>
-
-        //Home
         <activity
             android:name=".Home"
             android:label="@string/title_activity_home"
@@ -22,22 +20,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-
         <activity
             android:name=".forgot"
             android:label="ลืมรหัสผ่าน"
             android:parentActivityName=".MainActivity" />
-
         <activity android:name=".complaint" />
-
-
         <activity
             android:name=".register"
             android:label="ลงทะเบียน"
             android:parentActivityName=".MainActivity" />
-
-
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -45,8 +36,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-
         <activity android:name=".editprofile"
             android:label="แก้ไขข้อมูลส่วนตัว"
             android:parentActivityName=".Home">
@@ -55,17 +44,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-
         <activity android:name=".login"
         android:label="เข้าสู่ระบบ"
         android:parentActivityName=".MainActivity"/>
-
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
-
-
     </application>
 
 </manifest>
