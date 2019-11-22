@@ -1,5 +1,6 @@
 package com.example.winwinapp;
 
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -18,9 +19,8 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.storage.FirebaseStorage;
-import com.google.firebase.storage.StorageReference;
-import com.google.firebase.storage.UploadTask;
+import  com.example.winwinapp.User;
+
 
 public class register extends AppCompatActivity  {
 
@@ -28,8 +28,7 @@ public class register extends AppCompatActivity  {
     private EditText etFirstname,etLastname,etEmail,etUsername,etPassword,etConfirmPassword;
     private FirebaseAuth firebaseAuth;
     String email,firstname,lastname,username,password,confirm;
-    private FirebaseStorage firebaseStorage;
-    private StorageReference storageReference;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,26 +37,28 @@ public class register extends AppCompatActivity  {
         setupUIViews();
 
         firebaseAuth = FirebaseAuth.getInstance();
-        firebaseStorage = FirebaseStorage.getInstance();
-
-        storageReference = firebaseStorage.getReference();
-
 
         bRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(validate()){
+                FirebaseUser User = FirebaseAuth.getInstance().getCurrentUser();
+                if(validate() && User != null){
+
                     //Upload data to the database
                     String user_email = etEmail.getText().toString().trim();
                     String user_password = etPassword.getText().toString().trim();
+                    String firstname = etFirstname.getText().toString();
+                    String lastname = etLastname.getText().toString();
+                    String username = etUsername.getText().toString();
+
+                    boolean emailVerified = User.isEmailVerified();
+                    String uid = User.getUid();
 
                     firebaseAuth.createUserWithEmailAndPassword(user_email, user_password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
 
                             if(task.isSuccessful()){
-                                //sendEmailVerification();
-                                sendUserData();
                                 showMessage("ลงทะเบียนสำเร็จ");
                                 startActivity(new Intent(register.this, Home.class));
                             }else{
@@ -125,38 +126,6 @@ public class register extends AppCompatActivity  {
         }
 
         return result;
-    }
-
-
-    private void sendEmailVerification(){
-        FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
-        if(firebaseUser!=null){
-            firebaseUser.sendEmailVerification().addOnCompleteListener(new OnCompleteListener<Void>() {
-                @Override
-                public void onComplete(@NonNull Task<Void> task) {
-                    if(task.isSuccessful()){
-                        sendUserData();
-                        showMessage("ลงทะเบียนสำเร็จกรุณาตรวจสอบอีเมล");
-                        firebaseAuth.signOut();
-                        finish();
-                        startActivity(new Intent(register.this, Home.class));
-                    }else{
-
-                        showMessage("ไม่สามารถส่งอีเมลยืนยันตัวตนได้");
-
-                    }
-                }
-            });
-        }
-    }
-
-    private void sendUserData(){
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference ref = database.getReference();
-        User userProfile = new User(firstname,lastname,username,email);
-        ref = database.getReference().child("userProfile");
-        ref.setValue(userProfile);
-
     }
 
     //method to show toast message
