@@ -23,7 +23,7 @@
             </intent-filter>
         </activity>
 
-        //forgot password
+
         <activity
             android:name=".forgot"
             android:label="ลืมรหัสผ่าน"
@@ -31,13 +31,13 @@
 
         <activity android:name=".complaint" />
 
-        //register
+
         <activity
             android:name=".register"
             android:label="ลงทะเบียน"
             android:parentActivityName=".MainActivity" />
 
-        //main
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -46,7 +46,7 @@
             </intent-filter>
         </activity>
 
-        //editprofile
+
         <activity android:name=".editprofile"
             android:label="แก้ไขข้อมูลส่วนตัว"
             android:parentActivityName=".Home">
@@ -56,7 +56,7 @@
             </intent-filter>
         </activity>
 
-        //login
+
         <activity android:name=".login"
         android:label="เข้าสู่ระบบ"
         android:parentActivityName=".MainActivity"/>
