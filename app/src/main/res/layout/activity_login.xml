@@ -55,7 +55,7 @@
             app:fontFamily="@font/mitr_extralight" />
 
         <TextView
-            android:id="@+id/etForgot"
+            android:id="@+id/txForgot"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="240dp"

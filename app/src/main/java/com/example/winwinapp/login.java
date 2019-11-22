@@ -23,6 +23,7 @@ public class login extends AppCompatActivity  {
 
     private Button bLogin;
     private EditText etUsername,etPassword;
+    private TextView txForgot;
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthState;
 
@@ -34,6 +35,7 @@ public class login extends AppCompatActivity  {
         etUsername =  (EditText) findViewById(R.id.etUsername);
         etPassword = (EditText) findViewById(R.id.etPassword);
         bLogin = (Button)  findViewById(R.id.bLogin);
+        txForgot = (TextView) findViewById(R.id.txForgot);
 
         mAuth = FirebaseAuth.getInstance();
 

@@ -47,12 +47,7 @@ public class register extends AppCompatActivity  {
                     //Upload data to the database
                     String user_email = etEmail.getText().toString().trim();
                     String user_password = etPassword.getText().toString().trim();
-                    String firstname = etFirstname.getText().toString();
-                    String lastname = etLastname.getText().toString();
-                    String username = etUsername.getText().toString();
 
-                    boolean emailVerified = User.isEmailVerified();
-                    String uid = User.getUid();
 
                     firebaseAuth.createUserWithEmailAndPassword(user_email, user_password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                         @Override
@@ -133,7 +128,7 @@ public class register extends AppCompatActivity  {
     private  void sendData() {
         DatabaseReference mRootRef = FirebaseDatabase.getInstance().getReference();
         DatabaseReference mUsersRef = mRootRef.child("users");
-        User userdata = new User(firstname,lastname,username,email);
+        User userdata = new User(firstname,lastname,username,email,password);
         mUsersRef.push().setValue(userdata);
     }
     //method to show toast message
