@@ -4,7 +4,9 @@
         <item>@font/</item>
         <item>@font/mitr_extralight</item>
         <item>@font/pattaya</item>
+        <item>@font/prompt</item>
+        <item>@font/prompt_light</item>
+        <item>@font/prompt_medium</item>
         <item>@font/prompt_semibold</item>
-        <item>@font/prompt_thin</item>
     </array>
 </resources>

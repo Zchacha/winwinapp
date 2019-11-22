@@ -23,30 +23,30 @@
 
     <Button
         android:id="@+id/pin"
-        android:layout_width="308dp"
-        android:layout_height="71dp"
+        android:layout_width="350dp"
+        android:layout_height="80dp"
         android:layout_gravity="center|clip_vertical|top|center_vertical"
         android:layout_marginLeft="5dp"
         android:layout_marginTop="150dp"
         android:background="@drawable/buttom0"
         android:text="ปักหมุดการเดินทาง"
         android:textColor="#ffffff"
-        android:textSize="30dp"
-        app:fontFamily="@font/pattaya" />
+        android:textSize="29dp"
+        app:fontFamily="@font/prompt_medium" />
 
 
     <Button
         android:id="@+id/customize_distance"
-        android:layout_width="308dp"
-        android:layout_height="71dp"
+        android:layout_width="350dp"
+        android:layout_height="80dp"
         android:layout_gravity="center|clip_vertical|top|center_vertical"
         android:layout_marginLeft="5dp"
         android:layout_marginTop="80dp"
         android:background="@drawable/buttom0"
         android:text="กำหนดระยะทางด้วยตนเอง"
         android:textColor="#ffffff"
-        android:textSize="30dp"
-        app:fontFamily="@font/pattaya" />
+        android:textSize="29dp"
+        app:fontFamily="@font/prompt_medium" />
 
 
 </LinearLayout>

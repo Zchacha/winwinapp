@@ -10,6 +10,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".calculated"></activity>
+
         <activity
             android:name=".Home"
             android:label="@string/title_activity_home"
@@ -20,10 +22,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".forgot"
             android:label="ลืมรหัสผ่าน"
             android:parentActivityName=".MainActivity" />
+
         <activity android:name=".complaint" />
 
         <activity
@@ -39,6 +43,15 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".editprofile"
+            android:label="แก้ไขข้อมูลส่วนตัว"
+            android:parentActivityName=".Home">
+            <intent-filter>
+                <action android:name="android.intent.action.EDITPRO" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
         <activity android:name=".login"
         android:label="เข้าสู่ระบบ"
         android:parentActivityName=".MainActivity"/>
@@ -46,6 +59,8 @@
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
+
     </application>
 
 </manifest>

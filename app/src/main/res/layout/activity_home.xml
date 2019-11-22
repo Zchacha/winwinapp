@@ -24,12 +24,14 @@
 
         <TextView
             android:id="@+id/etprofile"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="550dp"
             android:singleLine="false"
             android:text="แก้ไขข้อมูลส่วนตัว"
-            android:textColor="#d0efff"
-            android:textSize="30dp"
+            android:textColor="#121313"
+            android:textSize="18dp"
             app:fontFamily="@font/mitr_extralight" />
     </com.google.android.material.navigation.NavigationView>
 
