@@ -30,7 +30,8 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:background="@drawable/edit_round"
-            android:hint="  Username"
+            android:hint="  Email"
+            android:inputType="textEmailAddress"
             app:fontFamily="@font/mitr_extralight" />
 
         <TextView

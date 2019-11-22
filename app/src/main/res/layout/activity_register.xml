@@ -119,6 +119,7 @@
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/edit_round"
                     android:hint="  Password"
+                    android:ems="10"
                     android:inputType="textPassword"
                     app:fontFamily="@font/mitr_extralight" />
 
@@ -139,6 +140,7 @@
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/edit_round"
                     android:hint="  ConfirmPassword"
+                    android:ems="10"
                     android:inputType="textPassword"
                     app:fontFamily="@font/mitr_extralight" />
 
