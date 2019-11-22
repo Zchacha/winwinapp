@@ -2,7 +2,9 @@
 <resources>
     <array name="preloaded_fonts" translatable="false">
         <item>@font/</item>
+        <item>@font/mitr</item>
         <item>@font/mitr_extralight</item>
+        <item>@font/mitr_light</item>
         <item>@font/pattaya</item>
         <item>@font/prompt</item>
         <item>@font/prompt_light</item>
