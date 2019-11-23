@@ -7,6 +7,10 @@
     <color name="colorBlue">#164176</color>
     <color name="colorGray">#c4c4c4</color>
     <color name="colorDarkGray">#7d7d7d</color>
+    <color name="colorBackground">#164176</color>
+    <color name="softdarkblue">#3864A7</color>
+
+
 
 
 </resources>
