@@ -77,6 +77,7 @@ public class login extends AppCompatActivity  {
                 }else {
 
                     showMessage("กรุณาเข้าระบบอีกครั้ง");
+                    startActivity(new Intent(login.this,Home.class));
 
                     }
                 }

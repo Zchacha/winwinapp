@@ -29,6 +29,7 @@ public class Home extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
     private TextView etprofile;
+    private Button logout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,6 +49,16 @@ public class Home extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+
+        logout = (Button) findViewById(R.id.logout);
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Button logout = (Button) findViewById(R.id.logout);
+                Intent intent = new Intent(Home.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
 
         etprofile = (TextView) findViewById(R.id.etprofile);
         etprofile.setPaintFlags(etprofile.getPaintFlags()| Paint.UNDERLINE_TEXT_FLAG);
