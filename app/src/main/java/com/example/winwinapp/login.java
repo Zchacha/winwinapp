@@ -78,8 +78,8 @@ public class login extends AppCompatActivity  {
 
                     showMessage("กรุณาเข้าระบบอีกครั้ง");
 
-                    }
                 }
+            }
 
         });
     }
@@ -112,11 +112,11 @@ public class login extends AppCompatActivity  {
         return result;
     }
 
-        //method to show toast message
-        private void showMessage (String text){
+    //method to show toast message
+    private void showMessage (String text){
 
-            Toast.makeText(getApplicationContext(), text, Toast.LENGTH_LONG).show();
-        }
+        Toast.makeText(getApplicationContext(), text, Toast.LENGTH_LONG).show();
     }
+}
 
 

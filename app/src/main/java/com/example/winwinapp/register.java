@@ -74,7 +74,6 @@ public class register extends AppCompatActivity  {
                 }else {
                     //something goes wrong : all fields must be filled
                     //we need to display an error message
-                    showMessage("อีเมลนี้มีผู้ใช้งานแล้ว");
                     bRegister.setVisibility(View.VISIBLE);
                     loadingProgress.setVisibility((View.INVISIBLE));
                 }
@@ -162,7 +161,7 @@ public class register extends AppCompatActivity  {
 
             showMessage("กรุณากรอกชื่อผู้ใช้");
 
-        }else if ( email.isEmpty() && password.isEmpty() && confirm.isEmpty() &&
+        } else if ( email.isEmpty() && password.isEmpty() && confirm.isEmpty() &&
                 firstname.isEmpty() && lastname.isEmpty() && username.isEmpty()){
 
             showMessage("กรุณากรอกข้อมูล");
