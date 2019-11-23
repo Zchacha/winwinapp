@@ -6,9 +6,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -19,15 +21,15 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import  com.example.winwinapp.User;
 
 
 public class register extends AppCompatActivity  {
 
     private Button bRegister;
     private EditText etFirstname,etLastname,etEmail,etUsername,etPassword,etConfirmPassword;
-    private FirebaseAuth firebaseAuth;
     String email,firstname,lastname,username,password,confirm;
+    private ProgressBar loadingProgress;
+    private FirebaseAuth mAuth;
 
 
     @Override
@@ -36,36 +38,83 @@ public class register extends AppCompatActivity  {
         setContentView(R.layout.activity_register);
         setupUIViews();
 
-        firebaseAuth = FirebaseAuth.getInstance();
+        //view
+        etEmail = findViewById(R.id.etEmail);
+        etPassword = findViewById(R.id.etPassword);
+        etConfirmPassword = findViewById(R.id.etConfirmPassword);
+        etFirstname = findViewById(R.id.etFirstname);
+        etLastname = findViewById(R.id.etLastname);
+        etUsername = findViewById(R.id.etUsername);
+        loadingProgress = findViewById(R.id.progressBar1);
+        bRegister = findViewById(R.id.bRegister);
+        loadingProgress.setVisibility(View.INVISIBLE);
+
+        mAuth=FirebaseAuth.getInstance();
+
 
         bRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                FirebaseUser User = FirebaseAuth.getInstance().getCurrentUser();
-                if(validate() && User != null){
 
-                    //Upload data to the database
-                    String user_email = etEmail.getText().toString().trim();
-                    String user_password = etPassword.getText().toString().trim();
+                bRegister.setVisibility(View.INVISIBLE);
+                loadingProgress.setVisibility(View.VISIBLE);
+                final String email = etEmail.getText().toString();
+                final String password = etPassword.getText().toString();
+                final String confirm = etConfirmPassword.getText().toString();
+                final String firstname = etFirstname.getText().toString();
+                final String lastname = etLastname.getText().toString();
+                final String username = etUsername.getText().toString();
 
+                if (validate()){
+                    //everything is ok and all field are filled now we can start creating user account
+                    //CreateUserAccount method will try to create the user if the email is valid
 
-                    firebaseAuth.createUserWithEmailAndPassword(user_email, user_password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                        @Override
-                        public void onComplete(@NonNull Task<AuthResult> task) {
+                    CreateUserAccount(email,password,confirm,firstname,lastname,username);
 
-                            if(task.isSuccessful()){
-                                sendData();
-                                showMessage("ลงทะเบียนสำเร็จ");
-                                startActivity(new Intent(register.this, Home.class));
-                            }else{
-                                showMessage("อีเมลนี้มีผู้ใช้งานแล้ว");
-                            }
+                }else {
+                    //something goes wrong : all fields must be filled
+                    //we need to display an error message
+                    showMessage("อีเมลนี้มีผู้ใช้งานแล้ว");
+                    bRegister.setVisibility(View.VISIBLE);
+                    loadingProgress.setVisibility((View.INVISIBLE));
+                }
 
-                        }
-                    });
+            }
+        });
+
+    }
+
+    private void CreateUserAccount(final String email, final String password, String confirm, final String firstname, final String lastname, final String username) {
+
+        //this method create user account with specific email and password
+        mAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+            @Override
+            public void onComplete(@NonNull Task<AuthResult> task) {
+                if (task.isSuccessful()){
+
+                    //user account created successfully
+                    showMessage("ลงทะเบียนสำเร็จ");
+                    //after we created user account we need to update his profile name
+                    updateUserInfo(firstname,lastname,email,password,username,mAuth.getCurrentUser());
+                    startActivity(new Intent(register.this, Home.class));
+                }
+                else {
+
+                    //account creation failed
+                    showMessage("สร้างไม่สำเร็จ" + task.getException().getMessage());
+                    bRegister.setVisibility(View.VISIBLE);
+                    loadingProgress.setVisibility(View.INVISIBLE);
                 }
             }
         });
+
+
+    }
+    //update user name
+    private void updateUserInfo(String firstname, String lastname, String email, String password, String username, FirebaseUser currentUser) {
+
+        //fist we need to upload user
+        sendData();
     }
 
     private void setupUIViews(){
