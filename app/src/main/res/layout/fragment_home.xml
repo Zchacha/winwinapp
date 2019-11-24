@@ -11,25 +11,26 @@
         android:id="@+id/text_home"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:text="Home"
+        android:textColor="#164176" />
 
     <Button
         android:id="@+id/pin"
-        android:layout_width="350dp"
+        android:layout_width="330dp"
         android:layout_height="80dp"
         android:layout_gravity="center|clip_vertical|top|center_vertical"
         android:layout_marginLeft="5dp"
-        android:layout_marginTop="160dp"
+        android:layout_marginTop="100dp"
         android:background="@drawable/buttom0"
         android:text="ปักหมุดการเดินทาง"
         android:textColor="#ffffff"
-        android:textSize="29dp"
-        app:fontFamily="@font/prompt_medium" />
+        android:textSize="27dp"
+        app:fontFamily="@font/mitr" />
 
 
     <Button
         android:id="@+id/customize_distance"
-        android:layout_width="350dp"
+        android:layout_width="330dp"
         android:layout_height="80dp"
         android:layout_gravity="center|clip_vertical|top|center_vertical"
         android:layout_marginLeft="5dp"
@@ -37,21 +38,28 @@
         android:background="@drawable/buttom0"
         android:text="กำหนดระยะทางด้วยตนเอง"
         android:textColor="#ffffff"
-        android:textSize="29dp"
-        app:fontFamily="@font/prompt_medium" />
+        android:textSize="27dp"
+        app:fontFamily="@font/mitr" />
+
+    <View
+        android:layout_width="330dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:background="#F8F7F7" />
 
     <Button
-        android:id="@+id/pay"
-        android:layout_width="350dp"
+        android:id="@+id/logout"
+        android:layout_width="330dp"
         android:layout_height="80dp"
         android:layout_gravity="center|clip_vertical|top|center_vertical"
         android:layout_marginLeft="5dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="60dp"
         android:background="@drawable/buttom0"
         android:text="รายจ่าย"
         android:textColor="#ffffff"
-        android:textSize="29dp"
-        app:fontFamily="@font/prompt_medium" />
+        android:textSize="27dp"
+        app:fontFamily="@font/mitr" />
 
 
 </LinearLayout>
