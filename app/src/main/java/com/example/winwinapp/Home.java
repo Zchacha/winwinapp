@@ -33,6 +33,7 @@ import android.view.Menu;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.Map;
 
@@ -54,6 +55,7 @@ public class Home extends AppCompatActivity {
         setSupportActionBar(toolbar);
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
+        profile();
 
 
         // Passing each menu ID as a set of Ids because each
@@ -144,6 +146,11 @@ public class Home extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 String username = dataSnapshot.child("username").getValue().toString();
                 String firstname = dataSnapshot.child("fistname").getValue().toString();
+                String lastname = dataSnapshot.child("lastname").getValue().toString();
+
+                txUsername.setText(username);
+                txFirstname.setText(firstname);
+                txLastname.setText(lastname);
             }
 
             @Override
