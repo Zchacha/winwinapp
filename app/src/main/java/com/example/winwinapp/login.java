@@ -46,9 +46,12 @@ public class login extends AppCompatActivity implements View.OnClickListener {
                 startActivity(intent);
         }
     }
+
+
+    //aum link to expense
     public void openForgot(){
 
-        Intent intent = new Intent(this,forgot.class);
+        Intent intent = new Intent(this,expenses.class);
         startActivity(intent);
     }
 

@@ -29,12 +29,17 @@ public class Home extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
     private TextView etprofile;
+    private  Button pinn;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+
+
 
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
@@ -60,6 +65,16 @@ public class Home extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        pinn =(Button) findViewById(R.id.pin);
+        pinn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openExpense();
+            }
+        });
+
+
     }
 
     @Override
@@ -81,4 +96,10 @@ public class Home extends AppCompatActivity {
         Intent intent = new Intent(this,editprofile.class);
         startActivity(intent);
     }
+
+    public void openExpense() {
+        Intent intent = new Intent (this,expenses.class);
+        startActivity(intent);
+    }
+
 }
