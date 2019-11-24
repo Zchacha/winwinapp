@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/colorBackground">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/softdarkblue">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/ic_budget_foreground" />
+
+        <TextView
+            android:id="@+id/budgett"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/mitr_extralight"
+            android:text="งบที่ตั้งไว้"
+            android:textColor="@color/colorwhite"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="10dp"
+            android:text="฿"
+            android:textColor="@color/colorwhite"
+            android:textSize="25sp"
+
+            />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="10dp"
+            android:text="500"
+            android:textColor="@color/colorwhite"
+            android:textSize="25sp"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/softdarkblue">
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@mipmap/ic_coin_foreground"
+            />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:fontFamily="@font/mitr_extralight"
+            android:textStyle="bold"
+            android:text="ที่ใช้ไป"
+            android:textSize="25sp"
+            android:textColor="@color/colorwhite"/>
+
+
+        <TextView
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:text="฿"
+            android:textSize="25sp"
+            android:textColor="#EE987F" />
+
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="500"
+            android:textColor="#EE987F"
+            android:textSize="25sp" />
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="250dp"
+            android:layout_height="2dp"
+            android:background="@color/softdarkblue" />
+        <View
+            android:layout_width="210dp"
+            android:layout_height="2dp"
+            android:background="@color/colorBackground" />
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/softdarkblue">
+
+        <TextView
+
+            android:layout_marginStart="303dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="฿"
+            android:textSize="30sp"
+            android:textColor="#C6C6F0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="500"
+            android:textColor="#C6C6F0"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/pencil"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="310dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@mipmap/pencil_foreground"/>
+
+
+
+</LinearLayout>
