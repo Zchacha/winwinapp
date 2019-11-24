@@ -1,20 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:showIn="@layout/app_bar_main">
+    android:background="#164176"
+    android:orientation="vertical">
 
-    <fragment
-        android:id="@+id/nav_host_fragment"
-        android:name="androidx.navigation.fragment.NavHostFragment"
+    <TextView
+        android:id="@+id/text_home"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:defaultNavHost="true"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:navGraph="@navigation/mobile_navigation" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:textColor="#164176" />
+
+    <Button
+        android:id="@+id/pin"
+        android:layout_width="330dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center|clip_vertical|top|center_vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/buttom0"
+        android:text="ปักหมุดการเดินทาง"
+        android:textColor="#ffffff"
+        android:textSize="27dp"
+        app:fontFamily="@font/mitr" />
+
+
+    <Button
+        android:id="@+id/customize_distance"
+        android:layout_width="330dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center|clip_vertical|top|center_vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/buttom0"
+        android:text="กำหนดระยะทางด้วยตนเอง"
+        android:textColor="#ffffff"
+        android:textSize="27dp"
+        app:fontFamily="@font/mitr" />
+
+    <View
+        android:layout_width="330dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:background="#F8F7F7" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="330dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center|clip_vertical|top|center_vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/buttom0"
+        android:text="รายจ่าย"
+        android:textColor="#ffffff"
+        android:textSize="27dp"
+        app:fontFamily="@font/mitr" />
+
+
+</LinearLayout>

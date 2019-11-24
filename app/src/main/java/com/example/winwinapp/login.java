@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -24,6 +25,7 @@ public class login extends AppCompatActivity  {
     private Button bLogin;
     private EditText etUsername,etPassword;
     private TextView txForgot;
+    private ProgressBar loadingProgress;
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthState;
 
@@ -43,7 +45,8 @@ public class login extends AppCompatActivity  {
                 openForgot();
             }
         });
-
+        loadingProgress = findViewById(R.id.progressBar1);
+        loadingProgress.setVisibility(View.INVISIBLE);
         mAuth = FirebaseAuth.getInstance();
 
         FirebaseUser user = mAuth.getCurrentUser();
@@ -70,7 +73,8 @@ public class login extends AppCompatActivity  {
         mAuth.signInWithEmailAndPassword(userName, userPassword).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
-
+                bLogin.setVisibility(View.INVISIBLE);
+                loadingProgress.setVisibility(View.VISIBLE);
                 if (task.isSuccessful()){
                     showMessage("เข้าสู่ระบบเรียบร้อย");
                     startActivity(new Intent(login.this,Home.class));
@@ -79,6 +83,8 @@ public class login extends AppCompatActivity  {
                     showMessage("กรุณาเข้าระบบอีกครั้ง");
 
                 }
+                bLogin.setVisibility(View.VISIBLE);
+                loadingProgress.setVisibility(View.INVISIBLE);
             }
 
         });
