@@ -66,7 +66,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="อีเมล์"
+                    android:text="อีเมล"
                     android:textColor="#ffffff"
                     android:textSize="20dp"
                     android:textStyle="bold"
@@ -155,6 +155,15 @@
                     android:textColor="#ffffff"
                     android:textSize="30dp"
                     app:fontFamily="@font/prompt_semibold"  />
+
+                <ProgressBar
+                    android:id="@+id/progressBar1"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="125dp"
+                    />
+
 
             </LinearLayout>
         </LinearLayout>
