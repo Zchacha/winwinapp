@@ -38,6 +38,7 @@ public class register extends AppCompatActivity  {
         setContentView(R.layout.activity_register);
         setupUIViews();
 
+
         //view
         etEmail = findViewById(R.id.etEmail);
         etPassword = findViewById(R.id.etPassword);
@@ -176,8 +177,13 @@ public class register extends AppCompatActivity  {
     private  void sendData() {
         DatabaseReference mRootRef = FirebaseDatabase.getInstance().getReference();
         DatabaseReference mUsersRef = mRootRef.child("users");
-        User userdata = new User(firstname,lastname,username,email,password);
-        mUsersRef.push().setValue(userdata);
+        User user = new User();
+        user.setUsername(etUsername.getText().toString());
+        user.setFistname(etFirstname.getText().toString());
+        user.setLastname(etLastname.getText().toString());
+        user.setPassword(etPassword.getText().toString());
+        user.setEmail(etEmail.getText().toString());
+        mUsersRef.push().setValue(user);
     }
     //method to show toast message
     private void showMessage (String text){

@@ -46,7 +46,7 @@
                     android:textSize="20sp" />
 
                 <TextView
-                    android:id="@+id/textText1.1"
+                    android:id="@+id/textText1_1"
                     android:layout_width="160dp"
                     android:layout_height="40dp"
                     android:layout_marginLeft="20dp"
@@ -70,7 +70,7 @@
                     android:textSize="20sp" />
 
                 <TextView
-                    android:id="@+id/textText2.1"
+                    android:id="@+id/textText2_1"
                     android:layout_width="160dp"
                     android:layout_height="40dp"
                     android:layout_marginLeft="85dp"
@@ -95,7 +95,7 @@
                     android:textSize="20sp" />
 
                 <TextView
-                    android:id="@+id/textView3.1"
+                    android:id="@+id/textView3_1"
                     android:layout_width="160dp"
                     android:layout_height="40dp"
                     android:layout_marginLeft="38dp"
@@ -120,7 +120,7 @@
                     android:textSize="20sp" />
 
                 <TextView
-                    android:id="@+id/textView4.1"
+                    android:id="@+id/textView4_1"
                     android:layout_width="160dp"
                     android:layout_height="40dp"
                     android:layout_marginLeft="58dp"
