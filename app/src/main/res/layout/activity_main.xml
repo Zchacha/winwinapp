@@ -46,7 +46,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="10dp"
-        android:text="หรือ"
         app:fontFamily="@font/mitr_extralight"
         android:textColor="#FFFFFF"
         android:textSize="20dp"
