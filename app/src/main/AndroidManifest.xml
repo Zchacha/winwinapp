@@ -17,7 +17,6 @@
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.HOME" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -26,12 +25,10 @@
             android:label="ลืมรหัสผ่าน"
             android:parentActivityName=".MainActivity" />
         <activity android:name=".complaint" />
-
         <activity
             android:name=".register"
             android:label="ลงทะเบียน"
             android:parentActivityName=".MainActivity" />
-
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -39,11 +36,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <activity android:name=".editprofile"
+            android:label="แก้ไขข้อมูลส่วนตัว"
+            android:parentActivityName=".Home">
+            <intent-filter>
+                <action android:name="android.intent.action.EDITPRO" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".login"
         android:label="เข้าสู่ระบบ"
         android:parentActivityName=".MainActivity"/>
-
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

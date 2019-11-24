@@ -30,7 +30,8 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:background="@drawable/edit_round"
-            android:hint="  Username"
+            android:hint="  Email"
+            android:inputType="textEmailAddress"
             app:fontFamily="@font/mitr_extralight" />
 
         <TextView
@@ -54,7 +55,7 @@
             app:fontFamily="@font/mitr_extralight" />
 
         <TextView
-            android:id="@+id/etForgot"
+            android:id="@+id/txForgot"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="240dp"
@@ -75,6 +76,15 @@
             android:textColor="#ffffff"
             android:textSize="30dp"
             app:fontFamily="@font/prompt_semibold"  />
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="125dp"
+            />
+
+
     </LinearLayout>
 
 

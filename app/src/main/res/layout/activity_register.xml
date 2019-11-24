@@ -66,7 +66,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="อีเมล์"
+                    android:text="อีเมล"
                     android:textColor="#ffffff"
                     android:textSize="20dp"
                     android:textStyle="bold"
@@ -119,6 +119,7 @@
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/edit_round"
                     android:hint="  Password"
+                    android:ems="10"
                     android:inputType="textPassword"
                     app:fontFamily="@font/mitr_extralight" />
 
@@ -139,6 +140,7 @@
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/edit_round"
                     android:hint="  ConfirmPassword"
+                    android:ems="10"
                     android:inputType="textPassword"
                     app:fontFamily="@font/mitr_extralight" />
 
@@ -153,6 +155,15 @@
                     android:textColor="#ffffff"
                     android:textSize="30dp"
                     app:fontFamily="@font/prompt_semibold"  />
+
+                <ProgressBar
+                    android:id="@+id/progressBar1"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="125dp"
+                    />
+
 
             </LinearLayout>
         </LinearLayout>
