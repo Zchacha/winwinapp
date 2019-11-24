@@ -52,7 +52,7 @@
         android:layout_marginTop="20dp"
         android:layout_gravity="center_horizontal"
         android:background="@drawable/buttom0"
-        android:text="คำนวณ"
+        android:text="ยืนยัน"
         android:textColor="#ffffff"
         android:textSize="30dp"
         app:fontFamily="@font/prompt_semibold" />

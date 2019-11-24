@@ -90,12 +90,12 @@ public class register extends AppCompatActivity  {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()){
-
+                    sendEmailVerification();
                     //user account created successfully
-                    showMessage("ลงทะเบียนสำเร็จ");
+                    showMessage("กรุณายืนยันตัวตนที่ "+email);
                     //after we created user account we need to update his profile name
                     updateUserInfo(firstname,lastname,email,password,username,mAuth.getCurrentUser());
-                    startActivity(new Intent(register.this, Home.class));
+                    startActivity(new Intent(register.this, MainActivity.class));
                 }
                 else {
 
@@ -183,6 +183,35 @@ public class register extends AppCompatActivity  {
     private void showMessage (String text){
 
         Toast.makeText(getApplicationContext(), text, Toast.LENGTH_LONG).show();
+    }
+    private void sendEmailVerification() {
+        // Disable button
+        findViewById(R.id.bRegister).setEnabled(false);
+
+        // Send verification email
+        // [START send_email_verification]
+        final FirebaseUser user = mAuth.getCurrentUser();
+        user.sendEmailVerification()
+                .addOnCompleteListener(this, new OnCompleteListener<Void>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+                        // [START_EXCLUDE]
+                        // Re-enable button
+                        findViewById(R.id.bRegister).setEnabled(true);
+
+                        if (task.isSuccessful()) {
+                            Toast.makeText(register.this,
+                                    "กรุณายืนยันตัวตนที่ " + user.getEmail(),
+                                    Toast.LENGTH_SHORT).show();
+                        } else {
+                            Toast.makeText(register.this,
+                                    "ไม่สามารถยืนยันตัวตนได้",
+                                    Toast.LENGTH_SHORT).show();
+                        }
+                        // [END_EXCLUDE]
+                    }
+                });
+        // [END send_email_verification]
     }
 }
 
