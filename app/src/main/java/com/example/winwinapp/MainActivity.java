@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity  {
         startActivity(intent);
     }
     public void openRegister(){
-        Intent intent = new Intent(this,register.class);
+        Intent intent = new Intent(this,expenses.class);
         startActivity(intent);
     }
 

@@ -20,11 +20,11 @@ public class complaint extends AppCompatActivity {
         tel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String phoneNumber = "1548";
-                Intent intent = new Intent(Intent.ACTION_CALL);
-                intent.setData(Uri.parse(phoneNumber));
-             // error permision
-                //  startActivity(intent);
+
+                Intent intent = new Intent(Intent.ACTION_DIAL);
+                intent.setData(Uri.parse("tel:1548"));
+                startActivity(intent);
+
 
             }
         });

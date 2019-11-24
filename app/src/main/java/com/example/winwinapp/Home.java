@@ -30,6 +30,7 @@ public class Home extends AppCompatActivity {
     private AppBarConfiguration mAppBarConfiguration;
     private TextView etprofile;
     private  Button pinn;
+    private TextView forgot;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,7 +40,13 @@ public class Home extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
 
-
+       forgot=(TextView) findViewById(R.id.etForgot);
+       forgot.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View view) {
+               openExpense();
+           }
+       });
 
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);

@@ -24,7 +24,7 @@
         android:layout_gravity="center_horizontal"
         android:text="Win Win"
         android:textColor="#ffffff"
-        android:textSize="50dp"
+        android:textSize="50sp"
         android:textStyle="bold"
         app:fontFamily="@font/pattaya" />
 
@@ -37,9 +37,9 @@
         android:background="@drawable/button"
         android:includeFontPadding="false"
         android:text="เข้าสู่ระบบ"
-        android:textSize="30dp"
-        app:fontFamily="@font/prompt_semibold"
-        android:textColor="#FE6C08" />
+        android:textColor="#FE6C08"
+        android:textSize="30sp"
+        app:fontFamily="@font/prompt_semibold" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -49,7 +49,7 @@
         android:text="หรือ"
         app:fontFamily="@font/mitr_extralight"
         android:textColor="#FFFFFF"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:textStyle="bold" />
 
     <Button
@@ -60,7 +60,7 @@
         android:layout_marginTop="10dp"
         android:background="@drawable/buttom0"
         android:text="ลงทะเบียน"
-        android:textSize="30dp"
+        android:textSize="30sp"
         app:fontFamily="@font/prompt_semibold"
         android:textColor="#FFFFFF" />
 
